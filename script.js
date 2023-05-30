@@ -40,8 +40,8 @@ function desencriptar(stringDesencriptado){
 }
 
 function btnCopiar(){
-  let contenido = document.querySelector("stringDsencriptado");
-  
-  navigator.clipboard.writeText(contenido.content);
-  console.log("texto copiado")
+  const textoCopiado = mensaje.value;
+  navigator.clipboard.writeText(textoCopiado);
+  console.log(mensaje.value);
+  mensaje.value = "";
 }
